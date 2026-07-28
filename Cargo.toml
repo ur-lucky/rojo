@@ -60,7 +60,7 @@ memofs = { version = "0.4.0", path = "crates/memofs" }
 rbx_binary = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_binary", branch = "bugfix/PropertiesSerialize", features = ["unstable_text_format"] }
 rbx_dom_weak = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_dom_weak", branch = "bugfix/PropertiesSerialize" }
 rbx_reflection = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_reflection", branch = "bugfix/PropertiesSerialize" }
-rbx_reflection_database = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_reflection_database", branch = "bugfix/PropertiesSerialize" }.1"
+rbx_reflection_database = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_reflection_database", branch = "bugfix/PropertiesSerialize" }
 rbx_xml = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_xml", branch = "bugfix/PropertiesSerialize" }
 
 anyhow = "1.0.80"
