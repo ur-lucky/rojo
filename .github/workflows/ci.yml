@@ -3,11 +3,11 @@ name: CI
 on:
   push:
     branches:
-    - master
+    - bugfix/PropertiesSerialize
 
   pull_request:
     branches:
-    - master
+    - bugfix/PropertiesSerialize
 
 jobs:
   build:
