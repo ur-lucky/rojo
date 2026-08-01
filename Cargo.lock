@@ -1854,6 +1854,7 @@ dependencies = [
 [[package]]
 name = "rbx_binary"
 version = "3.0.1"
+source = "git+https://github.com/ur-lucky/rbx-dom.git?branch=master#0fa665d4908e36f483be1995bba79a116652f57f"
 dependencies = [
  "ahash",
  "log",
@@ -1870,6 +1871,7 @@ dependencies = [
 [[package]]
 name = "rbx_dom_weak"
 version = "4.2.0"
+source = "git+https://github.com/ur-lucky/rbx-dom.git?branch=master#0fa665d4908e36f483be1995bba79a116652f57f"
 dependencies = [
  "ahash",
  "rbx_types",
@@ -1880,6 +1882,7 @@ dependencies = [
 [[package]]
 name = "rbx_reflection"
 version = "7.0.0"
+source = "git+https://github.com/ur-lucky/rbx-dom.git?branch=master#0fa665d4908e36f483be1995bba79a116652f57f"
 dependencies = [
  "rbx_types",
  "serde",
@@ -1889,6 +1892,7 @@ dependencies = [
 [[package]]
 name = "rbx_reflection_database"
 version = "3.0.1+roblox-728"
+source = "git+https://github.com/ur-lucky/rbx-dom.git?branch=master#0fa665d4908e36f483be1995bba79a116652f57f"
 dependencies = [
  "dirs 6.0.0",
  "log",
@@ -1900,6 +1904,7 @@ dependencies = [
 [[package]]
 name = "rbx_types"
 version = "3.1.0"
+source = "git+https://github.com/ur-lucky/rbx-dom.git?branch=master#0fa665d4908e36f483be1995bba79a116652f57f"
 dependencies = [
  "base64 0.13.1",
  "bitflags 2.13.1",
@@ -1913,6 +1918,7 @@ dependencies = [
 [[package]]
 name = "rbx_xml"
 version = "3.0.1"
+source = "git+https://github.com/ur-lucky/rbx-dom.git?branch=master#0fa665d4908e36f483be1995bba79a116652f57f"
 dependencies = [
  "ahash",
  "base64 0.13.1",
