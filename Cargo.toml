@@ -1,6 +1,6 @@
 [package]
 name = "rojo"
-version = "7.7.0"
+version = "7.7.1"
 rust-version = "1.88"
 authors = [
     "Lucien Greathouse <me@lpghatguy.com>",
@@ -57,11 +57,11 @@ memofs = { version = "0.4.0", path = "crates/memofs" }
 # rbx_reflection_database = { path = "../rbx-dom/rbx_reflection_database" }
 # rbx_xml = { path = "../rbx-dom/rbx_xml" }
 
-rbx_binary = { version = "3.0.0", features = ["unstable_text_format"] }
-rbx_dom_weak = "4.2.0"
-rbx_reflection = "7.0.0"
-rbx_reflection_database = "3.0.0"
-rbx_xml = "3.0.0"
+rbx_binary = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_binary", branch = "bugfix/PropertiesSerialize", features = ["unstable_text_format"] }
+rbx_dom_weak = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_dom_weak", branch = "bugfix/PropertiesSerialize" }
+rbx_reflection = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_reflection", branch = "bugfix/PropertiesSerialize" }
+rbx_reflection_database = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_reflection_database", branch = "bugfix/PropertiesSerialize" }
+rbx_xml = { git = "https://github.com/dubalda/rbx-dom.git", package = "rbx_xml", branch = "bugfix/PropertiesSerialize" }
 
 anyhow = "1.0.80"
 backtrace = "0.3.69"
