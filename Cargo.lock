@@ -1854,7 +1854,6 @@ dependencies = [
 [[package]]
 name = "rbx_binary"
 version = "3.0.1"
-source = "git+https://github.com/dubalda/rbx-dom.git?branch=bugfix%2FPropertiesSerialize#f1119c3c82d925ff8578a2440af11b7978e7fffb"
 dependencies = [
  "ahash",
  "log",
@@ -1871,7 +1870,6 @@ dependencies = [
 [[package]]
 name = "rbx_dom_weak"
 version = "4.2.0"
-source = "git+https://github.com/dubalda/rbx-dom.git?branch=bugfix%2FPropertiesSerialize#f1119c3c82d925ff8578a2440af11b7978e7fffb"
 dependencies = [
  "ahash",
  "rbx_types",
@@ -1882,7 +1880,6 @@ dependencies = [
 [[package]]
 name = "rbx_reflection"
 version = "7.0.0"
-source = "git+https://github.com/dubalda/rbx-dom.git?branch=bugfix%2FPropertiesSerialize#f1119c3c82d925ff8578a2440af11b7978e7fffb"
 dependencies = [
  "rbx_types",
  "serde",
@@ -1892,7 +1889,6 @@ dependencies = [
 [[package]]
 name = "rbx_reflection_database"
 version = "3.0.1+roblox-728"
-source = "git+https://github.com/dubalda/rbx-dom.git?branch=bugfix%2FPropertiesSerialize#f1119c3c82d925ff8578a2440af11b7978e7fffb"
 dependencies = [
  "dirs 6.0.0",
  "log",
@@ -1904,7 +1900,6 @@ dependencies = [
 [[package]]
 name = "rbx_types"
 version = "3.1.0"
-source = "git+https://github.com/dubalda/rbx-dom.git?branch=bugfix%2FPropertiesSerialize#f1119c3c82d925ff8578a2440af11b7978e7fffb"
 dependencies = [
  "base64 0.13.1",
  "bitflags 2.13.1",
@@ -1918,7 +1913,6 @@ dependencies = [
 [[package]]
 name = "rbx_xml"
 version = "3.0.1"
-source = "git+https://github.com/dubalda/rbx-dom.git?branch=bugfix%2FPropertiesSerialize#f1119c3c82d925ff8578a2440af11b7978e7fffb"
 dependencies = [
  "ahash",
  "base64 0.13.1",
@@ -2100,7 +2094,7 @@ dependencies = [
 
 [[package]]
 name = "rojo"
-version = "7.7.1"
+version = "7.7.2"
 dependencies = [
  "anyhow",
  "backtrace",

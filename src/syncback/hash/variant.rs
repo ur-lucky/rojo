@@ -186,6 +186,15 @@ pub fn hash_variant(hasher: &mut Hasher, value: &Variant) {
                 hash!(hasher, tag.as_bytes())
             }
         }
+        Variant::TweenInfo(tween_info) => n_hash!(
+            hasher,
+            round!(tween_info.time),
+            round!(tween_info.delay_time),
+            tween_info.repeat_count,
+            tween_info.easing_style.to_u32(),
+            tween_info.easing_direction.to_u32(),
+            tween_info.reverses as u8
+        ),
         Variant::UDim(udim) => n_hash!(hasher, round!(udim.scale), udim.offset),
         Variant::UDim2(udim) => n_hash!(
             hasher,
@@ -213,4 +222,24 @@ pub fn hash_variant(hasher: &mut Hasher, value: &Variant) {
 
 fn vector_hash(hasher: &mut Hasher, vector: Vector3) {
     n_hash!(hasher, round!(vector.x), round!(vector.y), round!(vector.z))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use rbx_dom_weak::types::{Enum, TweenInfo};
+
+    fn finish_hash(value: Variant) -> blake3::Hash {
+        let mut hasher = Hasher::new();
+        hash_variant(&mut hasher, &value);
+        hasher.finalize()
+    }
+
+    #[test]
+    fn tween_info_fields_affect_hash() {
+        let first = TweenInfo::new(1.25, Enum::from_u32(7), Enum::from_u32(2), 7, true, 0.75);
+        let second = TweenInfo::new(2.5, Enum::from_u32(7), Enum::from_u32(2), 7, true, 0.75);
+
+        assert_ne!(finish_hash(first.into()), finish_hash(second.into()));
+    }
 }

@@ -161,6 +161,14 @@ pub fn variant_eq(variant_a: &Variant, variant_b: &Variant) -> bool {
                 false
             }
         }
+        (Variant::TweenInfo(a), Variant::TweenInfo(b)) => {
+            approx_eq!(f32, a.time, b.time)
+                && approx_eq!(f32, a.delay_time, b.delay_time)
+                && a.repeat_count == b.repeat_count
+                && a.easing_style == b.easing_style
+                && a.easing_direction == b.easing_direction
+                && a.reverses == b.reverses
+        }
         (Variant::UDim(a), Variant::UDim(b)) => {
             approx_eq!(f32, a.scale, b.scale) && a.offset == b.offset
         }
